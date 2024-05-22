@@ -8,10 +8,10 @@ def get_query_results(query):
     try:
         connection = mariadb.connect(
             user="root",
-            password="LetsM@k3!T@AZT",
-            host="192.168.0.200",
+            password="your_password",
+            host="your_host",
             port=3306,
-            database="azthrmsdb"
+            database="your_database"
         )
     except mariadb.Error as e:
         print(f"Error connecting to MariaDB Platform: {e}")
